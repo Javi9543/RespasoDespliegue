@@ -1,6 +1,6 @@
 # Calculadora
 
-- Descripcion: 
+## Descripcion: 
 Este proyecto se trata de una sencilla calculadora aritmetica con la cual al introducir dos numeros se podran sumar, restar, multiplicar, dividir...
 
 ## Instrucciones de instalacion
@@ -21,7 +21,7 @@ Tras tener el repositorio clonado:
 1. deberas ir a src> app.js y abrir otra terminal: 
 
 ```bash
-    cd /tu-directorio/src/app.js
+    cd /tu-directorio/src/
     node app.js #esto te permitirá ejecutar el programa sin necesidad de tener un servidor web
 ```
 
