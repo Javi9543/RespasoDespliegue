@@ -1,3 +1,11 @@
+---
+name: Bug Report
+about: Reporta un bug o problema
+title: ''
+labels: bug
+assignees: ''
+---
+
 ## Issue: 
 
 ### Titulo del bug o problema: 
