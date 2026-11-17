@@ -10,7 +10,7 @@ function sumar(a, b) {
 }
 
 /**
- * Funcion que resta el numero introducido en a y el numero introducido en b
+ * Funcion que resta gel numero introducido en a y el numero introducido en b
  * @param {number} a Numero 1 
  * @param {Number} b Numero 2 
  * @returns {Number} la resta de a - b 
@@ -34,6 +34,7 @@ function multiplicar(a, b) {
  * @param {Number} a Numero 1 
  * @param {Number} b Numero 2
  * @returns {Number} devuelve la division de a / b
+ * @throws {Error} Si b es 0 no hace la division ya que no se puede dividir entre 0
  */
 function dividir(a, b) {
     if (b === 0) throw new Error("No se puede dividir entre cero");
