@@ -9,3 +9,13 @@ conf.py
 index.rst
 make.bat
 Makefile
+composer.json
+composer.phar
+phpdoc.phar
+files
+graphs
+indices
+namespaces
+packages
+reports
+
