@@ -1,6 +1,5 @@
 node-modules
 package-lock.json
-package.json
 .venv
 __pycache__
 _static
