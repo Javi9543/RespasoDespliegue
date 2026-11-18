@@ -10,8 +10,8 @@ jobs:
   ejecuto-el-action-en-el-workflow:
     runs-on: ubuntu-latest
     steps:
-    - name: descargo el repo en el runner
-      uses: actions/checkout@v7
+      - name: descargo el repo en el runner
+        uses: actions/checkout@v7
 
-    - name: ejecuto la config e instalacion
-      uses: ./.github/actions/configuracion-node-env
+      - name: ejecuto la config e instalacion
+        uses: ./.github/actions/configuracion-node-env

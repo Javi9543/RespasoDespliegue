@@ -2,16 +2,12 @@ name: "Ejercicio con github action"
 
 runs: 
   using: "composite"
-
-jobs: 
-  configurarNode: 
-    runs-on: ubuntu-latest
-    steps: 
-      - name: configurar Node.js 
-        uses: actions/setup-node.js@v4
-        with: 
-          node-version: '20'
+  steps: 
+    - name: configurar Node.js 
+      uses: actions/setup-node@v4
+      with: 
+        node-version: '20'
       
-      - name: instalar Node.js
-        run: npm install
-        shell: bash
+    - name: instalar Node.js
+      run: npm install
+      shell: bash
