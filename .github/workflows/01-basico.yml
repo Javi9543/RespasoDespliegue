@@ -1,4 +1,4 @@
-zname: 'Saludo'
+name: 'Saludo'
 description: "Mi primer workflow sin ayuda"
 
 on:
