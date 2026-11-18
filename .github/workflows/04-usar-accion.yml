@@ -14,5 +14,4 @@ jobs:
       uses: actions/checkout@v7
 
     - name: ejecuto la config e instalacion
-      uses: .github/actions/configuracion-node-env
-
+      uses: ./.github/actions/configuracion-node-env
