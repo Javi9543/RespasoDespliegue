@@ -8,20 +8,21 @@ on:
 
   jobs: 
     genera-Artefacto:
-      - runs-on: ubuntu-latest
-        steps:
+      runs-on: ubuntu-latest
+      steps:
         - name: crear texto de prueba
           run: echo "Hola, soy un artefacto" > prueba.txt
         
         - name: subirArtefacto
-          uses: actions/uploads@v7
+          uses: actions/upload-arctifacts@v7
           with: 
             name: artefacto-prueba
             path: prueba.txt
 
     prueba-Artefacto:
-      - runs-on: ubuntu-latest
-        steps: 
+      needs: genera-Artefacto
+      runs-on: ubuntu-latest
+      steps: 
         - name: descargo el artefacto
           uses: actions/download-artifact@v8
           with: 
