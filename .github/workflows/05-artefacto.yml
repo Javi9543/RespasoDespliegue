@@ -6,7 +6,7 @@ on:
   
   workflow_dispatch:
 
-  jobs: 
+jobs: 
     genera-Artefacto:
       runs-on: ubuntu-latest
       steps:
