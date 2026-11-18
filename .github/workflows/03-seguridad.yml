@@ -12,5 +12,5 @@ jobs:
       SECRETO: ${{ secrets.SECRETO_REPO }}
     steps: 
     - run: echo "esto es una variable local ${{ env.ENTORNO }}"
-    - run: echo "esto es una variable ${{ env.VARIABLE }}"
-    - run: echo "esto es un secreto ${{ env.SECRETO }}"
+    - run: echo "esto es una variable $VARIABLE"
+    - run: echo "esto es un secreto $SECRETO"
