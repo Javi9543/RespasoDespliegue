@@ -1,0 +1,16 @@
+name: Pruebas de variables de entorno
+
+on: 
+  workflow_dispatch
+
+jobs: 
+  imprimir-variablesEntorno: 
+    runs-on: ubuntu-latest
+    env: 
+      ENTORNO: staging
+      VARIABLE: ${{ vars.VAR_REPO }}
+      SECRETO: ${{ secrets.SECRETO_REPO }}
+    steps: 
+    - run: echo "esto es una variable local ${{ env.ENTORNO }}"
+    - run: echo "esto es una variable: ${{ env.VARIABLE }}"
+    - run: echo "esto es un secreto: ${{ env.SECRETO }}"
