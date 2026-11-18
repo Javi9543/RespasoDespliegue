@@ -1,0 +1,31 @@
+name: artefactos
+
+on:
+  push: 
+    branches: [develop, 'feature/**']
+  
+  workflow_dispatch:
+
+  jobs: 
+    genera-Artefacto:
+      - runs-on: ubuntu-latest
+        steps:
+        - name: crear texto de prueba
+          run: echo "Hola, soy un artefacto" > prueba.txt
+        
+        - name: subirArtefacto
+          uses: actions/uploads@v7
+          with: 
+            name: artefacto-prueba
+            path: prueba.txt
+
+    prueba-Artefacto:
+      - runs-on: ubuntu-latest
+        steps: 
+        - name: descargo el artefacto
+          uses: actions/download-artifact@v8
+          with: 
+            name: artefacto-prueba
+
+        - name: comprobar existencia
+          run: cat prueba.txt
