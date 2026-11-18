@@ -6,7 +6,7 @@ on:
   
   workflow_dispatch:
 
-  jobs: 
+jobs: 
     genera-Artefacto:
       runs-on: ubuntu-latest
       steps:
@@ -14,8 +14,8 @@ on:
           run: echo "Hola, soy un artefacto" > prueba.txt
         
         - name: subirArtefacto
-          uses: actions/upload-arctifacts@v7
-          with: 
+          uses: actions/upload-artifact@v4
+          with:
             name: artefacto-prueba
             path: prueba.txt
 
