@@ -10,5 +10,5 @@ jobs:
   lugar-evento:
     runs-on: ubuntu-latest
     steps: 
-      run: echo "Este evento ha ocurrido en ${{ github.event_name }}"
+    - run: echo "Este evento ha ocurrido en ${{ github.event_name }}"
 
