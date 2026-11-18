@@ -14,8 +14,8 @@ jobs:
           run: echo "Hola, soy un artefacto" > prueba.txt
         
         - name: subirArtefacto
-          uses: actions/upload-arctifact@v7
-          with: 
+          uses: actions/upload-artifact@v8
+          with:
             name: artefacto-prueba
             path: prueba.txt
 
