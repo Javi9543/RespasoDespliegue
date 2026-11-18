@@ -6,6 +6,9 @@ on:
   
   workflow_dispatch:
 
+concurrency: 
+  group: revisar-${{ github.workflow }}-${{ github.ref }} 
+  cancel-in-progress: true
 jobs: 
     genera-Artefacto:
       runs-on: ubuntu-latest
