@@ -1,0 +1,14 @@
+zname: 'Saludo'
+description: "Mi primer workflow sin ayuda"
+
+on:
+  workflow_dispatch
+
+jobs: 
+  saludo-inicial: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hola mundo esto es un workflow básico"
+      - run: node -v 
+      - run: ls -la
+      
