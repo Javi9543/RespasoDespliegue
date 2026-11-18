@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs: 
-  ejecuto el action en el workflow:
+  ejecuto-el-action-en-el-workflow:
     runs-on: ubuntu-latest
     steps:
     - name: descargo el repo en el runner
